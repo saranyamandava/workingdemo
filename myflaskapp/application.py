@@ -31,7 +31,7 @@ def index():
 	#render out pre-built HTML file right on the index page
 		return render_template("index.html")
 
-@application.route('/results',methods=['POST'])
+@application.route('/',methods=['POST'])
 def predict():
 	comment = ''
 	if request.method == 'POST':
