@@ -45,7 +45,7 @@ def predict():
 			
 			#out = (-pred).argsort()[:1]
 			out = np.argmax(pred,axis=1)[:1]
-		return render_template('index.html',prediction = out,comment = comment)
+		return render_template('results.html',prediction = out,comment = comment)
 
     
 	
